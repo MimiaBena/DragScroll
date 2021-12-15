@@ -32,7 +32,8 @@ contentSection.addEventListener('mouseup', () => {
     isDown = false;
   });
   contentSection.addEventListener('mousemove', (e) => {
-    if(!isDown) return;
+    if(!isDown) 
+      return;
     e.preventDefault();
     const x = e.pageX - contentSection.offsetLeft;
     contentSection.scrollLeft = scrollLeft + ((startX - x) * 3);
