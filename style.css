@@ -1,0 +1,26 @@
+.hd{
+    background-color: beige;
+    height: 110px;
+}
+.hd h1{
+    position: relative;
+     top: 50%;
+     transform: perspective(1px) translateY(-50%);
+    text-align: center;
+     
+}
+
+.post {
+  width: 200px;
+  height: 200px;
+  display: inline-block;
+  flex-wrap: wrap;
+  margin:10px;
+  box-shadow: 6px;
+  border-radius: 5%;
+}
+
+.post:hover {
+  transform: scale(1.05);
+  box-shadow: rgba(0, 0, 0, 0.5) 0px 8px 24px 0px;
+}
