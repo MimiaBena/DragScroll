@@ -1,11 +1,20 @@
 const contentSection = document.querySelector(".content");
+const image = new Array("A.jpg", "B.jpg", "C.jpg", "D.jpg", "E.jpg", "F.jpg", "G.jpg");
 
+for(let i = 0; i < 7; ++i) {
+    console.log(image[i]);
+}
 
 function createItem(){
     for(let i = 0; i < 7; ++i) {
     const item = document.createElement('div');
     item.classList.add('post');
-    item.style.backgroundColor = 'blue';  
+    item.style.backgroundColor = 'black';
+    //const img = document.createElement('img');
+    //img.src= 'lever-de-soleil.jpg';
+     console.log(image[i]);
+    item.style.backgroundImage ="url('" + image[i] + "')";
+    //item.append(img);
     contentSection.append(item);   
 }
 }
